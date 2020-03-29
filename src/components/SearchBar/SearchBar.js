@@ -1,10 +1,10 @@
 import React from 'react';
-import from './SearchBar.css';
+import './SearchBar.css';
 
 const sortByOptions = {
     'Best Match': 'best_match',
-    'Highest Rated': rating,
-    'Most Reviewed': review_count
+    'Highest Rated': 'rating',
+    'Most Reviewed': 'review_count'
 };
 
 class SearchBar extends React.Component {
@@ -21,7 +21,6 @@ class SearchBar extends React.Component {
                 <div className="SearchBar-sort-options">
                     <ul>
                         {this.renderSortByOptions()}
-                        <!-- Use .renderSortByOptions() to sort the businesses by their options -->
                     </ul>
                 </div>
                  <div className="SearchBar-fields">
