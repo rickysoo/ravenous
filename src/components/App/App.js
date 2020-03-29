@@ -1,9 +1,37 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import BusinessList from '../BusinessList/BusinessList';
+import SearchBar from '../SearchBar/SearchBar';
 
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <h1>ravenous</h1>
+        <SearchBar />
+        <BusinessList />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+/*
 function App() {
   return (
+    <div className="App">
+      <h1>ravenous</h1>
+      <SearchBar />
+      <BusinessList />
+    </div>
+  );
+}
+*/
+
+/* Old return
+
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -20,10 +48,8 @@ function App() {
         </a>
       </header>
     </div>
-  );
-}
 
-export default App;
+*/
 
 /*
 .App {
